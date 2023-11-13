@@ -3,7 +3,7 @@
 ## Installation
 Pour installer le projet, il suffit de cloner le projet sur votre machine.
 ```bash
-git clone https://github.com/LGARRABOS/DevOps.git
+git clone https://github.com/AFERREIRA33/wik-dps-tp01.git
 ```
 
 ## Utilisation
