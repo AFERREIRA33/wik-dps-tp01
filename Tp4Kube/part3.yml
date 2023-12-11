@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: tp4
+  name: ru
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: ru
+  template:
+    metadata:
+      labels:
+        app: ru
+    spec:
+      containers:
+      - name: api
+        image: registry.cluster.wik.cloud/public/echo
+        ports:
+        - containerPort: 8080
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 50%
